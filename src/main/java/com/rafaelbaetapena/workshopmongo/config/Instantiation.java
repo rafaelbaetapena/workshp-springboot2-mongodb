@@ -7,6 +7,7 @@ import java.util.TimeZone;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.context.annotation.Profile;
 
 import com.rafaelbaetapena.workshopmongo.domain.Post;
 import com.rafaelbaetapena.workshopmongo.domain.User;
@@ -16,6 +17,7 @@ import com.rafaelbaetapena.workshopmongo.repository.PostRepository;
 import com.rafaelbaetapena.workshopmongo.repository.UserRepository;
 
 @Configuration
+@Profile("test")
 public class Instantiation implements CommandLineRunner {
 
 	@Autowired	
